@@ -1,0 +1,152 @@
+/* Colors and fonts */
+body {
+  background: #EDF6F9;
+  color: #83C5BE;
+  font-family: 'Lora', serif;
+  font-size: 17px;
+  font-weight: lighter;
+  text-align: center;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  text-align: center;
+}
+h1 {
+  color: #006D77;
+  font-size: 32px;
+  font-weight: 900;
+}
+h2 {
+  color: #006D77;
+  font-size: 20px;
+  font-weight: lighter;
+  font-weight: 550;
+}
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #E29578;
+  font-weight: 550;
+  font-size: 16px;
+}
+a:hover {
+  color: rgb(12, 182, 12);
+}
+.img-circle {
+  border-radius: 10%;
+}
+.shadowed{
+  box-shadow: 2px 2px 2px #bdc4c6;
+}
+.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+.card-white {
+  background: #EDF6F9;
+  padding: 30px;
+  border: 1px solid #d7dfe2;
+  width: 500px;
+  margin: 10 auto;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+}
+
+.fa-github-square {
+  font-size: 50px;
+}
+.fa-linkedin-in{
+ font-size: 50px;
+
+}
+.fa-seedling {
+  font-size: 50px;
+}
+
+span {
+  position: relative;
+  font-family: "Avenir Next", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+span:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(filter-content);
+  filter: url(#motion-blur-filter);
+}
+
+svg {
+  display: none;
+}
+
+
+html
+{
+	padding: 0 1em;
+	font-family: Calibri, sans-serif;
+}
+
+body
+{
+	margin: auto;
+	max-width: 42em;
+}
+
+img
+{
+	max-width: 100%;
+}
+
+.image-left, .image-right
+{
+	margin: 1em 0;
+}
+
+@media (min-width: 20em)
+{
+	.image-left, .image-right
+	{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-left img
+	{
+		margin-right: 5em;
+		float: left; /* fallback */
+	}
+
+	.image-right img
+	{
+		order: 1;
+		margin-left: auto;
+		float: right; /* fallback */
+	}
+
+	/* clearfix for fallback */
+	.image-left::after,
+	.image-right::after
+	{
+		content: "";
+  	display: block;
+		clear: both;
+	}
+}
+
+@media (min-width: 40em)
+{
+	.image-left img, .image-right img
+	{
+		flex-shrink: 0;
+	}
+}
